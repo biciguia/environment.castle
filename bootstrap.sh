@@ -13,7 +13,7 @@ if [[ $1 == "gitflow" ]] ; then
 fi
 
 # Gems
-gem install vagrant
+gem install --user vagrant
 
 # Homesick
 git clone https://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
