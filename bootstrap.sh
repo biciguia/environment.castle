@@ -27,3 +27,8 @@ $LINKER -b clone https://github.com/biciguia/environment.castle.git
 if [[ $1 == "link" || $1 == "pull" ]] ; then
     $LINKER $1 environment.castle
 fi
+
+# Folders
+mkdir ~/labxp
+cd ~/labxp
+git clone https://github.com/biciguia/biciguia-frontend.git
