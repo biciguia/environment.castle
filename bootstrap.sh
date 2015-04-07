@@ -40,5 +40,5 @@ ln -s $HOME/labxp/Sublime\ Text\ 2/sublime_text ~/bin/subl
 rm $HOME/labxp/subl.tar.bz2
 
 # Git-prompt
-wget-O $HOME/bin/.git-prompt.sh -c https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh 
+wget -O $HOME/bin/.git-prompt.sh -c https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh 
 
