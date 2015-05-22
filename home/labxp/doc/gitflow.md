@@ -35,7 +35,9 @@ Then this became git extentions <https://github.com/nvie/gitflow> , with command
   For release branches, the `<base>` arg must be a commit on `develop`.
 
   After creating the release, use:
+  
   		git push origin <release>
+  		
   To send the created release tag to the remote server.
   
 * To list/start/finish hotfix branches, use:
