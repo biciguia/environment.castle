@@ -8,6 +8,9 @@ if [[ $1 == "tools" ]] ; then
     git submodule init
     git submodule update
 
+    # Make symbolic link for node
+    ln -s $HOME/.homesick/repos/environment.castle/node $HOME/local
+
     # Gitflow
     mkdir ~/bin
     wget -c https://raw.github.com/nvie/gitflow/develop/contrib/gitflow-installer.sh
