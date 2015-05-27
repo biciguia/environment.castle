@@ -1,3 +1,3 @@
-[submodule "https:/github.com/biciguia/node.git"]
-	path = https:/github.com/biciguia/node.git
-	url = ./home/local
+[submodule "home/local"]
+	path = home/local
+	url = https://github.com/biciguia/node.git
