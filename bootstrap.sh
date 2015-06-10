@@ -4,10 +4,6 @@
 if [[ ! -e $HOME/.homesick/repos/homeshick ]]; then
     # Homesick
     git clone https://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
-else
-    cd $HOME/.homesick/repos/homeshick
-    git pull
-    cd -
 fi
 
 source $HOME/.homesick/repos/homeshick/homeshick.sh
@@ -26,8 +22,17 @@ if [[ ! -e ~/labxp/biciguia-frontend ]]; then
     cd -
 fi
 
-# Dotfiles
-$LINKER -b clone https://github.com/biciguia/environment.castle.git
+if [[ ! -e $HOME/.homesick/repos/environment.castle ]]; then
+    # Dotfiles
+    $LINKER -b clone https://github.com/biciguia/environment.castle.git
+fi
+
+if [[ $1 == "all" ]]; then
+    # do everything
+    bash $0 pull
+    bash $0 tools
+    bash $0 link
+fi
 
 # Linking
 if [[ $1 == "link" || $1 == "pull" ]] ; then
